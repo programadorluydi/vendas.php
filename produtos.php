@@ -13,6 +13,8 @@
                 <th>Id</th>
                 <th>Descrição</th>
                 <th>Categoria</th>
+                <th>Preço</th>
+                <th>Estoque</th>
                 <th>Editar</th>
                 <th>Excluir</th>
                 </tr>
@@ -27,11 +29,15 @@
                   $id_produto = $array['id_produto'];
                   $desc_produto = $array['desc_produto'];
                   $desc_categoria = $array['desc_categoria'];
+                  $preco = $array['preco'];
+                  $qtde_estoque = $array['qtde_estoque'];
                   ?>
                    <tr>
                    <td><?php echo($id_produto)?></td>
                    <td><?php echo($desc_produto)?></td>
                    <td><?php echo($desc_categoria)?></td>
+                   <td><?php echo("R$ " . number_format($preco,2,",","."))?></td>
+                   <td><?php echo($qtde_estoque)?></td>
                    <td><a href="produtos_editar.php?id_produto=<?php echo($id_produto)?>" class="btn btn-success">Editar</a></td>
                    <td><a href="produtos_excluir.php?id_produto=<?php echo($id_produto)?>" class="btn btn-danger">Excluir</a></td>
                    <!-- para passar o parametro que é o id do usuario para o modulo de edição que 
