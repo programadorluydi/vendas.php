@@ -4,21 +4,21 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     </head>
     <body>
-        <?php include 'menu.php'; ?>
+        <?php include 'menu.php';?>
         <div class="container">
             <form action="_usuarios_incluir.php" method="post">
                 <h1>Inclusão de Usuarios</h1>
-                <label>Nome do Cliente</label>
+                <label>Nome do Usuário</label>
                 <input type="text" name="nome_usuario" id="nome_usuario" class="form-control" required>
-                <!-- required torna o campo obrigatorio -->
+                <!-- required torna o campo obrigatório -->
                 <label>E-mail</label>
                 <input type="email" name="email" id="email" class="form-control"> 
-                <!-- type= "email" chega se tem @ no campo-->
+                <!-- type="email" checa se tem @ no campo  -->
                 <label>Password</label>
                 <input type="password" name="senha" id="senha" class="form-control"> 
-                <!-- type= "password" nao deixa o usuario ler o que digita-->
+                <!-- type="password" não deixa o usuario ler o que digita -->
                 <div style="text-align: right;">
-                   <button type="submit" id="botao" class="btn btn-success btn-small">Incluir</button>
+                   <button type="submit" id="botao" class="btn btn-success btn-small">Cadastrar</button>
                 </div>                              
             </form>
         </div>  
